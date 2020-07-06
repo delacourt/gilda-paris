@@ -1,0 +1,6 @@
+<%= render 'shared/navbar' %>
+<div class="container">
+  <% form_tag products_path, method: :post do %>
+    <%= text_field_tag "name", "value", placeholder: "placeholder" %>
+  <% end -%>
+</div>

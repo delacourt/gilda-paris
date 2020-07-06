@@ -1,0 +1,14 @@
+<%= render 'shared/navbar' %>
+<div class="container">
+  <% if @user && @user.admin %>
+    <%= link_to "new product", new_product_path  %>
+  <% end %>
+  <div class="products">
+    <% @products.each do |product| %>
+      <div class="card">
+        <%= product.name %>
+      </div>
+    <% end %>
+
+  </div>
+</div>

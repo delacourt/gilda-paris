@@ -1,0 +1,14 @@
+<div class="navbar-g-trans">
+    <div class="home-button">
+      <%= link_to "Gilda", root_path  %>
+    </div>
+    <div class="navbar-elements">
+      <%= link_to "Products", products_path  %>
+      <div><a href="#">Page 2</a></div>
+      <div><a href="#">Page 3</a></div>
+      <div><a href="#">Page 4</a></div>
+    </div>
+    <% if @user %>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete  %>
+    <% end %>
+  </div>
